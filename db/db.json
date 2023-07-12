@@ -3,17 +3,17 @@
     {
       "id": "0",
       "userId": "0",
-      "detailsId":"0",
-      "name":"nom",
+      "detailsId": "0",
+      "name": "nom",
       "category": "",
-      "done": false
+      "done": true
     }
   ],
-  "taskDetails":[
+  "taskDetails": [
     {
-      "id":"0",
-      "taskId":"0",
-      "text":"lorem ipsum"
+      "id": "0",
+      "taskId": "0",
+      "text": "lorem ipsum"
     }
   ],
   "users": [
