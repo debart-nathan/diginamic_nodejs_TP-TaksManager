@@ -1,5 +1,4 @@
-
-
+const form = document.getElementById("user-login")
 
 //functions
 async function fillSelectUser() {
@@ -20,6 +19,15 @@ async function fillSelectUser() {
     }
 }
 
+function selectUser(ev){
+    ev.preventDefault()
+    const data =new FormData(ev.target)
+
+    window.location.replace(`/user/${data.get("user-id")}/tasks`)
+}
+
 //main
 
-fillSelectUser()
+fillSelectUser();
+
+form.addEventListener("submit",selectUser)
