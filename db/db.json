@@ -2,9 +2,18 @@
   "tasks": [
     {
       "id": "0",
-      "userId": "user",
+      "userId": "0",
+      "detailsId":"0",
+      "name":"nom",
       "category": "",
       "done": false
+    }
+  ],
+  "taskDetails":[
+    {
+      "id":"0",
+      "taskId":"0",
+      "text":"lorem ipsum"
     }
   ],
   "users": [
