@@ -7,16 +7,12 @@ const userId= window.location.href.split("/")[4]
 //function
 
 async function loadTasks(){
-    const tasks=[{
-        id:0,
-        name:"test",
-        text:"description",
-        category:"",
-        done:false
-    }]
-    tasks.forEach(task=>renderTask(task))
-
-
+    try {
+        const tasks= await (await fetch(`/api/user/${userId}/tasks`)).json()
+        tasks.forEach(task=>renderTask(task))
+    } catch (error) {
+        console.log(error);
+    }
 }
 
 function renderTask(task){
