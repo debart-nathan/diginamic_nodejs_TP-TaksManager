@@ -3,3 +3,5 @@ ssl/*
 !ssl/.gitkeep
 env/*
 !env/*~
+db/*
+!db/*~
