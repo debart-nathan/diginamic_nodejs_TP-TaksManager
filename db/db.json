@@ -1,0 +1,16 @@
+{
+  "tasks": [
+    {
+      "id": "0",
+      "userId": "user",
+      "category": "",
+      "done": false
+    }
+  ],
+  "users": [
+    {
+      "id": "0",
+      "name": "exemple.user"
+    }
+  ]
+}
