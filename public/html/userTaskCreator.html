@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/js/userTaskCreator.js" defer></script>
     <title>Création de Tache</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Création de Tache</h1>
-</body>
+    <nav>
+      <button onclick="document.location.href='./tasks'">
+        Liste des Taches
+      </button>
+    </nav>
+    <form id="createForm">
+      <label>Nom : <input name="name" id="task-name" type="text" /> </label>
+      <label>
+        Catégorie :
+        <select name="category" id="task-category">
+          <option value="">aucune</option>
+          <option value="priority">Prioritaire</option>
+          <option value="important">important</option>
+        </select>
+      </label>
+      <label>Description : 
+        <textarea name="description" id="task-description" cols="30" rows="10"></textarea>
+      </label>
+      <button type="submit">Ajouté</button>
+    </form>
+  </body>
 </html>
